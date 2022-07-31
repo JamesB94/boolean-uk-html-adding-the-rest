@@ -1,0 +1,123 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.container {
+    display: grid;
+    grid-template:
+
+      "talkingHeads  header header "     20px
+      "talkingHeads channels dialog-box " 500px
+      "talkingHeads profile-status chat-box" 40px/
+        50px     150px    1100px;
+   }
+
+.talkingHeads {
+    grid-area: talkingHeads ;
+    background-color: aqua;
+}
+
+.header {
+    grid-area: header ;
+    background-color: brown;
+
+}
+
+.channels {
+    grid-area: channels  ;
+    background-color: darkmagenta;
+
+}
+
+.dialog-box {
+    grid-area: dialog-box  ;
+    background-color: fuchsia;
+
+}
+
+.profile-status {
+    grid-area: profile-status ;
+    background-color: coral;
+
+}
+
+.chat-box {
+    grid-area: chat-box  ;
+    background-color: greenyellow;
+
+}
+
+/* start  of nested talking heads */
+
+.talkingHeadsNested {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: repeat(8,30px);
+  gap: 10px;
+  text-align: left ;
+}
+
+.talkingHeadsNested p {
+    border: 2px solid white;
+    border-radius: 60%;
+}
+
+/* start  of nested talking heads */
+
+.booleanUk {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: repeat(1,30px);
+
+}
+
+.booleanUk p {
+    border: 2px solid black;
+}
+
+.invitePeople {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,100px);
+}
+
+.invitePeople p {
+    border: 2px solid black;
+}
+
+.channelsNested {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,80px);
+    margin: 10px;
+}
+
+.channelsNested p {
+    border: 2px dotted black;
+}
+
+.footerChannel {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,30px);
+    margin: 5px;
+}
+
+.footerChannel p {
+    border: 2px dotted black;
+}
+
+.chatBar {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,30px);
+    margin: 5px;
+}
+
+.chatBar p {
+    border: 2px dotted black;
+}
+
+
+
