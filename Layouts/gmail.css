@@ -1,0 +1,225 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.container {
+    display: grid;
+    grid-template:
+
+      "header  header header header"     50px
+      "left-menu main  right-menu side-menu" auto/
+        200px     1fr    250px 50px;
+   }
+
+   .header {
+    grid-area: header ;
+    background-color: blue;
+    text-align: center;
+    color: white;
+   }
+
+   .left-menu {
+    grid-area: left-menu ;
+    background-color: red;
+    text-align: center;
+    color: white;
+   }
+
+   .main {
+    grid-area: main ;
+    background-color: green ;
+    text-align: center;
+    color: white;
+   }
+
+   .right-menu {
+    grid-area: right-menu ;
+    background-color: purple ;
+    text-align: center;
+    color: white;
+   }
+
+   .side-menu {
+    grid-area: ;
+    background-color: black ;
+    text-align: center;
+    color: white;
+   }
+
+/*start of hnested header */
+
+   .logo {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,30px);
+    gap: 10px;
+    margin-top: 15px;
+    max-width: 200px;
+   }
+
+   .logo p {
+    border: 2px solid black;
+   }
+
+  .searchBar {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+
+/* end of nested header */
+
+
+/* Start of the nested main menu */
+
+   .nestedMain {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(30, 1fr);
+    /* gap: 10px; */
+    /* grid-auto-rows: 400px; */
+   }
+
+   .nestedMain p {
+    border: 2px dotted black;
+   }
+
+/* end of the nested main menu */   
+
+
+/* Start of the nested left menu */
+
+   .compose {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin: 20px;
+    
+   }
+   .compose p {
+    border: 2px dotted black;
+   }
+
+   .catagories {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 5px;
+    margin: 10px;
+    text-align: left ;
+   }
+
+   .catagories p {
+    border: 2px solid black;
+   }
+
+   .meetings {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 5px;
+    margin: 10px;
+    text-align: left ;
+   }
+
+   .meetings p {
+      border: 2px solid black;
+   }
+
+   .chat {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    margin: 10px;
+    text-align: left ;
+   }
+
+   .chat p {
+    border: 2px dotted black;
+ }
+
+ /* end of the nested left menu */
+
+ /* start of right menu nested grid */
+
+.settings {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 5px;
+    margin: 10px;
+    text-align: left ;
+}
+
+.settings p {
+  border: 2px dotted black;
+}
+
+.Density {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,50px);
+    gap: 5px;
+    margin: 10px;
+    text-align: left ;
+}
+
+.Density p {
+  border: 2px solid black;
+}
+
+.theme {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,40px);
+    gap: 10px;
+    margin: 20px;
+    text-align: left ;
+}
+
+.theme p {
+  border: 2px solid black;
+}
+
+.inboxType {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,70px);
+    gap: 10px;
+    margin: 20px;
+    text-align: left ;
+}
+
+.inboxType p {
+  border: 2px solid black;
+}
+
+/* end of nested right side menu */
+
+/* start of side menu nested */
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: repeat(4,30px);
+  gap: 10px;
+  margin: 10px;
+  text-align: left ;
+}
+
+.icons p{
+  border: 2px solid white;
+}
+
+.addIcon {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: repeat(1,30px);
+  gap: 10px;
+  margin: 10px;
+  text-align: left ;
+}
+
+.addIcon p {
+  border: 2px solid white;
+}
+
+
+/* end of side menu nested */
+
